@@ -9,7 +9,7 @@ var college = require('./models/college')
 
 //Set up mongoose connection
 var mongoose = require('mongoose');
-var mongoDB = `mongodb+srv://dbUser:dbPassword@collegecosts.bfrtw.mongodb.net/college_data?retryWrites=true&w=majority`;
+var mongoDB = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@${process.env.DB_HOST}.bfrtw.mongodb.net/college_data?retryWrites=true&w=majority`;
 mongoose.connect(mongoDB, { useFindAndModify: false, useNewUrlParser: true , useUnifiedTopology: true});
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
@@ -44,7 +44,6 @@ if (process.env.NODE_ENV === 'production') {
     res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
   });
 }
-
 
 app.listen(PORT, () => {
   console.log(`Server listening on ${PORT}`);
