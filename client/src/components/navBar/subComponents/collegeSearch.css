@@ -1,0 +1,13 @@
+.site-college-info-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+
+    .site-college-info-container {
+        display: grid;
+        grid-template-columns: auto 5fr;
+    }
+}

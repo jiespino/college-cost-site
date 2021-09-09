@@ -1,0 +1,7 @@
+.stateContainer { 
+    display: grid;
+    justify-content: center;
+}
+.stateContainer label {
+    text-align: center;
+}

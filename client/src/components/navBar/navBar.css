@@ -1,0 +1,51 @@
+
+.nav-item .underline {
+    border-bottom: 3px solid black;
+    color: black;
+}
+
+.nav-item a {
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-links li:hover{
+    font-weight: 500;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+}
+
+.nav-bar {
+    margin: 10px 0;
+    border-bottom: 2px solid black;
+
+}
+.nav-item {
+    display: grid;
+    justify-content: center;
+}
+
+.nav-bar ul {
+    padding-inline-start: 0;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    .nav-bar {
+        display: flex;
+        justify-content: flex-end;
+        margin: 10px 0;
+        border-bottom: none;
+
+    }
+    .nav-links {
+        display: flex;
+
+    }
+}

@@ -1,0 +1,13 @@
+.tuition-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+table {
+    margin: 5px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th {
+    border: 1px solid black;
+}

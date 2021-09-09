@@ -1,0 +1,80 @@
+.college-card {
+    border: 1px solid black;
+    padding: 10px;
+    display: grid;
+    /* grid-auto-rows: min-content; */
+    /* align-items: space-evenly; */
+}
+
+.college-card .college-title {
+    font-weight: 400;
+    font-size: 26px;
+    text-align: center;
+}
+
+.college-card .college-img {
+    /* height: 300px; */
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.college-card .imgTitle {
+    width: 80%;   
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+.toolTip {
+    width: 500px;
+}
+
+.college-card span {
+    font-weight: 500;
+}
+
+.college-card span:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.college-card .address {
+    font-weight: 100;
+    font-size: normal;
+}
+.college-card .address:hover {
+    text-decoration: underline;
+    color: blue;
+}
+.favorite-container {
+    display: grid;
+    justify-items: center;
+    align-items: flex-end;
+    
+
+}
+.favorite-button {
+    background: none;
+    border: 1px solid rgb(255, 152, 0);
+    color: rgb(255, 152, 0);
+    font-size: 15px;
+    border-radius: 1020px;
+    fill: currentColor;
+
+
+}
+.favorite-button-active {
+    background:  rgb(255, 152, 0);
+    color: white;
+    font-size: 15px;
+    border-radius: 1020px;
+    transition: box-shadow 0.4s;
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.15);
+    fill: currentColor;
+}
+
+
+

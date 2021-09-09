@@ -1,0 +1,128 @@
+
+.college-data {
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 98vw;
+    margin: auto;
+}
+.cards-container {
+    display: grid;
+    grid-template-columns: 1fr
+}
+.cards-button-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.prev-next-button-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.prev-next-buttons {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+}
+.prev-next-buttons:hover{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.cards-button-container .results-container {
+    display: grid;
+    justify-items: center;
+}
+.page-buttons {
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: center;
+    padding-inline-start: 0;
+}
+
+.page-buttons .page-button-single {
+    list-style-type: none;
+    padding: 5px 5px;
+    margin: 0 2px;
+    border: 2px solid black;
+    display: inline;
+    border-radius: 5px;
+    width: 15px;
+    text-align: center;
+}
+.page-buttons .page-button-single:hover {
+    background-color: lightgrey;
+}
+
+.page-buttons .selected-page {
+    color: white;
+    background-color: black;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid black;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    margin: 300px auto
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
+  /* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    .college-data {
+        border: 2px solid black;
+        border-radius: 15px;
+        width: 100%;
+    }
+    .cards-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .cards-button-container {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+
+    .prev-next-button-container {
+        display: grid;
+        grid-template-columns: auto;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .prev-next-buttons {
+        width: 150px;
+        height: 35px;
+        border-radius: 50px;
+        background-color: white;
+        border: 2px solid black;
+        color: black;
+    }
+
+    .page-buttons .page-button-single {
+        list-style-type: none;
+        padding: 20px 10px;
+        margin: 0 2px;
+        border: 2px solid black;
+        display: inline;
+        border-radius: 5px;
+        width: 15px;
+        text-align: center;
+    }
+
+}
