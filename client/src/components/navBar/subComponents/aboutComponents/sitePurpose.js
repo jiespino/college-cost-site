@@ -71,7 +71,7 @@ function SitePurpose() {
             {privateTuitionTable}
         </div>
         <p> These increased costs put an onus on students to choose their education path wisely and to give each of their options plenty of scrutiny.
-            This site is meant to a simple view of U.S. college costs and state student aid. 
+            This site is meant to give a simple view of U.S. college costs and state student aid. 
             Hopefully make it easier for students to see what options/opportunities are
             available in their state.
         </p>
