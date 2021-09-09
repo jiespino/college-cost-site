@@ -5,12 +5,11 @@ const bodyParser = require('body-parser');
 
 var stateColleges = require('./models/stateColleges')
 var college = require('./models/college')
-console.log(process.env)
 
 
 //Set up mongoose connection
 var mongoose = require('mongoose');
-var mongoDB = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@${process.env.DB_HOST}.bfrtw.mongodb.net/college_data?retryWrites=true&w=majority`;
+var mongoDB = `mongodb+srv://dbUser:dbPassword@collegecosts.bfrtw.mongodb.net/college_data?retryWrites=true&w=majority`;
 mongoose.connect(mongoDB, { useFindAndModify: false, useNewUrlParser: true , useUnifiedTopology: true});
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
