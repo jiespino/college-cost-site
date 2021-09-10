@@ -142,20 +142,29 @@ function CollegeData(props) {
     let SAT75 = Number(college.SAT75);
     let ACT25 = Number(college.ACT25);
     let ACT75 = Number(college.ACT75);
+    let gradRate = Number(college.gradRate) * 100
+    let acceptRate = Number(college.admRate) * 100
     let collegeName = college.name.toLowerCase()
     let searchedName = props.collegeName.toLowerCase()
 
-    let tuitionFilter = resultFilters[0]
-    let costFilter = resultFilters[1]
-    let SATFilter = resultFilters[2]
-    let ACTFilter = resultFilters[3]
+    let tuitionFilter = Number(resultFilters[0])
+    let costFilter = Number(resultFilters[1])
+    let SATFilter = Number(resultFilters[2])
+    let ACTFilter = Number(resultFilters[3])
+    let gradRateFilter = Number(resultFilters[4])
+    let acceptRateFilter = Number(resultFilters[5]) 
 
-    // Filter results if SAT score filter is applied 
+    console.log("test")
+    console.log(college)
+    console.log(acceptRate)
+    console.log(acceptRateFilter)
+    console.log(resultFilters)
+    // Filter results if tuition filter is applied 
     if (tuitionFilter && tuitionFilter < tuition) {
       return false
     }
 
-    // Filter results if SAT score filter is applied 
+    // Filter results if net cost filter is applied 
     if (costFilter && costFilter < cost) {
       return false
     }
@@ -168,6 +177,26 @@ function CollegeData(props) {
 
     // Filter results if ACT score filter is applied 
     if (ACTFilter && ACTFilter < ACT25) {
+      return false
+    }
+
+    // Filter results if graduation rate filter is applied 
+    if (gradRateFilter && gradRateFilter > gradRate) {
+      return false
+    }
+
+    // If graduation rate filter and college doesn't have acceptance rate, filter collge out
+    if (gradRateFilter && !gradRate) {
+      return false
+    }
+
+    // Filter results if acceptance rate filter is applied 
+    if (acceptRateFilter && acceptRateFilter > acceptRate) {
+      return false
+    }
+
+    // If acceptance rate filter and college doesn't have acceptance rate, filter collge out
+    if (acceptRateFilter && !acceptRate) {
       return false
     }
 

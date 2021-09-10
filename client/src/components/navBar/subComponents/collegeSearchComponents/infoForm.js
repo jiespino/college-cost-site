@@ -7,6 +7,10 @@ function InfoForm(props) {
   const [cost, setCost] = useState(null);
   const [SATScore, setSATScore] = useState(null);
   const [ACTScore, setACTScore] = useState(null);
+  const [gradRate, setGradRate] = useState(null);
+  const [acceptRate, setAcceptRate] = useState(null);
+
+
 
   /* Tuition change*/
   function handleTuitionChg(e) {
@@ -28,16 +32,26 @@ function InfoForm(props) {
     setACTScore(e.target.value);
   }
 
+  /* Graduation rate change*/
+  function handleGradRateChg(e) {
+    setGradRate(e.target.value);
+  }
+
+  /* Acceptance rate change*/
+  function handleAcceptRateChg(e) {
+    setAcceptRate(e.target.value);
+  }
+
 
   return (
     <div className="InfoForm">
       <div className="info-form-container">
-        <form className="info-form" onSubmit={(e) => props.addAddtFilters(tuition, cost, SATScore, ACTScore, e)}>
+        <form className="info-form" onSubmit={(e) => props.addAddtFilters(tuition, cost, SATScore, ACTScore, gradRate, acceptRate, e)}>
 
           <div className="filter-init-crit">
           <p className="filter-title">Initial criteria</p>
             <label>
-              State of residency? 
+              <p>State of residency? </p>
               <select onChange={props.handleUSStateChg} defaultValue={"IL"}>
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
@@ -93,26 +107,30 @@ function InfoForm(props) {
               </select>	
               </label>
 
-              <label>Parental income:
+              <label>
+                <p>Parental income:</p>
                 <input className="type-input" type="number" name="parentIncome" min="0" max="10000000000" onChange={props.handlePIChg} defaultValue={"60000"}/>
             </label>
 
-            <label>Search By Name:
+            <label>
+              <p>Search By Name:</p>
                   <input className="type-input" type="text" name="collegeName" onChange={props.handleCollegeNameChg}/>
             </label>
 
             <p className="filter-title">Result options</p>
 
-            <label>Sort by
+            <label>
+              <p>Sort by</p>
             <select className="sort-select"onChange={props.handleSortChg} defaultValue={"testScore"}>
                 <option value="testScore">Test scores</option>
-                <option value="cost">Cost</option>
+                <option value="cost">Net cost</option>
                 <option value="tuition">Tuition</option>
 
               </select>
               </label>
 
             <label>
+              <p>
               Show
               <select className="page-entries-select" onChange={props.handleCardsPerPageChg} defaultValue={"24"}>
                 <option value="6" >6</option>
@@ -122,6 +140,7 @@ function InfoForm(props) {
                 <option value="all">All</option>
               </select>
               Entries
+              </p>
               </label>
 
             </div>    
@@ -156,19 +175,51 @@ function InfoForm(props) {
 
               <div className="filter-addit-options">
                 <p className="filter-title">Additional Filters</p>
-                <label> Tuition:
-                  <input className="type-input" type="number" name="tuiton" min="0" max="10000000000" onChange={handleTuitionChg}/>
+                <label>
+                  <p>Tuition:</p>
+                  <div className="filterInput">
+                  &#8804;
+                  <input className="type-input" type="number" name="tuiton" min="0" max="100000" onChange={handleTuitionChg}/>
+                  </div>
                 </label>
-                <label> Average Cost:
-                  <input className="type-input" type="number" name="cost" min="0" max="10000000000" onChange={handleCostChg}/>
+                <label>
+                  <p>Average Cost:</p>
+                  <div className="filterInput">
+                  &#8804;
+                  <input className="type-input" type="number" name="cost" min="0" max="100000" onChange={handleCostChg}/>
+                  </div>
                 </label>
-                <label>SAT Score:
+                <label>
+                  <p>SAT Score:</p>
+                  <div className="filterInput">
+                  &#8804;
                   <input className="type-input" type="number" name="satScore" min="0" max="1600" onChange={handleSATChg}/>
+                  </div>
                 </label>
-                <label>ACT Score:
-                  <input className="type-input" type="number" name="satScore" min="0" max="36" onChange={handleACTChg}/>
+                <label>
+                  <p>ACT Score:</p>
+                  <div className="filterInput">
+                  &#8804;
+                  <input className="type-input" type="number" name="actScore" min="0" max="36" onChange={handleACTChg}/>
+                  </div>
                 </label>
-                <button>Filter</button>  
+                <label>
+                  <p>Graduation Rate:</p>
+                  <div className="filterInput">
+                  &#8805;
+                  <input className="type-input" type="number" name="gradRate" min="0" max="100" onChange={handleGradRateChg}/>
+                  </div>
+                </label>
+                <label>
+                  <p>Acceptance Rate:</p>
+                  <div className="filterInput">
+                  &#8805;
+                  <input className="type-input" type="number" name="acceptRate" min="0" max="100" onChange={handleAcceptRateChg}/>
+                  </div>
+                </label>
+                <div className="filterButton">
+                  <button>Filter</button>  
+                </div>
               </div>
         </form>
       </div>

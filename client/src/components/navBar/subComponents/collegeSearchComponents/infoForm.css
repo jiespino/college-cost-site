@@ -23,10 +23,12 @@
 
 .info-form input, select {
   display: block;
+  border-radius: 6px;
 }
 
 .info-form .type-input, .sort-select{
   width: 95%;
+  border-radius: 6px;
 }
 
 .info-form .page-entries-select {
@@ -42,6 +44,23 @@
   margin: auto;
 }
 
+.filterInput {
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+}
+
+.filterButton {
+  margin-top: 10px;
+  display: grid;
+  justify-content: center;
+}
+
+label {
+  text-align: center;
+}
+label > p {
+  margin: 0;
+}
 
 
 /* Medium devices (landscape tablets, 768px and up) */

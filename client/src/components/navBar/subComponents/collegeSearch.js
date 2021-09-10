@@ -114,9 +114,9 @@ function CollegeSearch() {
     setAllType(e.target.checked);
   }
 
-  function addAddtFilters(tuition, cost, SATScore, ACTScore, e) {
+  function addAddtFilters(tuition, cost, SATScore, ACTScore, gradRate, acceptRate, e) {
     e.preventDefault()
-    setResultFilters([tuition, cost, SATScore, ACTScore])
+    setResultFilters([tuition, cost, SATScore, ACTScore, gradRate, acceptRate])
   }
 
 
