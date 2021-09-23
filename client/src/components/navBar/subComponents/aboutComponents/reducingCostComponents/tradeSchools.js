@@ -22,10 +22,9 @@ function TradeSchools() {
                 university <a target="_blank" href={tradeSchoolPay} rel="noreferrer">(see here for examples)</a>. 
                 The median salary for a <a target="_blank" href={bachelorDegreePay} rel="noreferrer">someone with a bachelor degree in 2019 was $64,896</a>.
             </p>
-            <p>  These careers aren't exactly glorified in America, but the people who work these trades do important work and also make a good living. 
+            <p>These careers aren't exactly glorified in America, but the people who work these trades do important work and also make a good living. 
               And like other professions that require a degree, high performing individuals in these trade school fields can <a target="_blank" href={tradeSchoolHighPaying} rel="noreferrer">earn upwards
-                of 6 figures with enough experience and hard work</a>. There are lots of resources for researching this choice further on your own, 
-                but <a target="_blank" href={traditionalVsTradeschoolComparison} rel="noreferrer">here is one article</a> comparing trade schools to traditional colleges
+                of 6 figures with enough experience and hard work</a>. There are lots of resources for researching this choice further. <a target="_blank" href={traditionalVsTradeschoolComparison} rel="noreferrer">Here is one article</a> comparing trade schools to traditional colleges
                 and <a target="_blank" href={blueCollarLaborShortage} rel="noreferrer">here is a video PBS</a> did on the blue-collar labor shortage in America.</p>
         </li>
       </div>

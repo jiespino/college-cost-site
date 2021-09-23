@@ -154,11 +154,6 @@ function CollegeData(props) {
     let gradRateFilter = Number(resultFilters[4])
     let acceptRateFilter = Number(resultFilters[5]) 
 
-    console.log("test")
-    console.log(college)
-    console.log(acceptRate)
-    console.log(acceptRateFilter)
-    console.log(resultFilters)
     // Filter results if tuition filter is applied 
     if (tuitionFilter && tuitionFilter < tuition) {
       return false

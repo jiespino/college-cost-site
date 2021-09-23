@@ -71,32 +71,31 @@ function SitePurpose() {
             {privateTuitionTable}
         </div>
         <p> These increased costs put an onus on students to choose their education path wisely and to give each of their options plenty of scrutiny.
-            This site is meant to give a simple view of U.S. college costs and state student aid. 
-            Hopefully make it easier for students to see what options/opportunities are
-            available in their state.
+            This site is meant to give students a convenient way to view U.S. college costs and state student aid. 
+            Hopefully make it easier for students to see what options/opportunities are available in their state.
         </p>
         <ul>
             <li>The Search tab gives high-level details for U.S. universities (average net cost/year by household income, tuition prices, average SAT scores, etc.).
-                Average net cost by income can be especially helpful, as it gives a rough estimate of how much aid the university is likely to give you based on your family's income level.
-                Some universities are very generous and give students lots of aid if they come from low-middle income families.
+                Average net cost by income can be especially helpful, as it gives a rough estimate of how much financial aid you are likely to receive from the university.
+                Some universities are very generous and give students a good amount of aid if they come from low-middle income families.
             </li>
             <li>
                 The Favorites tab lets you view schools you have favorited on the main search tab.
             </li>
             <li>
-                The U.S. State Programs tab lists either state programs that significally reduce tuition costs for low-income students or individual college programs
+                The U.S. State Programs tab lists either state programs that significally reduce tuition costs for low-middle income students or individual college programs
                 that reduce tuition costs for these folks.
                 To call out a few states:
                 <ul>
                     <li>{NewYork} allows students with household incomes under $125,000 to attend State University of New York and City University of New York colleges at no tuition cost</li>
                     <li>{California} allows students with household incomes under $80,000 to attend any University of California System campus at no tuition cost</li>
-                    <li>Texas has many, many universities that cover tuition for low-income students. The income requirement varies by university, but it can be as
+                    <li>Texas has many, many universities that cover tuition for low-income students. The income requirement varies by university, but can be as
                         high as $80,000 for {WestTexasAM}, $65,000 for the {UTAustin}, and $60,000 for {TexasAM}. At the lower end,
                         the {UTDallas} covers tuition costs for students with a household income under $25,000.
                     </li>
                     <li>The {OklahomaPromise} allows students with household incomes under $60,000 to attend any public university in Oklahoma tuiton free.
                     Students must apply to the program before their senior year of high school.</li>
-                <p>In my opinion, these states give the most generous aid in America but there are many others I can't list here, so please look up your state on the tab if it isn't listed above.</p>
+                <p>In my opinion, these states give the most generous aid, but I can't list all of them here, so please look up your state on the tab if it isn't listed above.</p>
                 </ul>
             </li>
         </ul>

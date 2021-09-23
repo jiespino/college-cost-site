@@ -17,16 +17,6 @@ function WyomingPrograms() {
   );
 }
 
-function WyomingGrants() {
-    const WyomingGrantInfo = "http://www.collegescholarships.org/grants/states/wyoming.htm"
-    return (
-        <div>
-          <h2>Wyoming Student Grants</h2>
-          A list of Wyoming student grants can be found <a href={WyomingGrantInfo} target={_blank} rel={_noreferrer}>here</a>.
-      </div>
-    );
-}
-
 function CowboyCommitment() {
     const CowboyCommitInfo = "https://www.uwyo.edu/admissions/scholarships/residents/cowboycommitment.html"
     return (
@@ -46,7 +36,7 @@ function WyomingWorks() {
     return (
         <div>
             <h2>Wyoming Works (not for high school students)</h2>
-            <p>Wyoming Works is a state need-based grant program for adults students at a Wyoming community college.
+            <p>Wyoming Works is a state need-based grant program for adult students at a Wyoming community college.
                The award amount depends on student financial need. There are two tiers of grants, the Standard Grant awards up to $1,680 per year, and the
                Critical Grant awards up to $3,360 per year. The eligible programs and participating Wyoming community colleges are listed in the link below.
             </p>
@@ -64,6 +54,16 @@ function WyomingWorks() {
             <p>For the official program link, please look <a href={WyomingWorksInfo} target={_blank} rel={_noreferrer}>here</a>.</p>
       </div>
     );
+}
+
+function WyomingGrants() {
+  const WyomingGrantInfo = "http://www.collegescholarships.org/grants/states/wyoming.htm"
+  return (
+      <div>
+        <h2>Wyoming Student Grants</h2>
+        A list of Wyoming student grants can be found <a href={WyomingGrantInfo} target={_blank} rel={_noreferrer}>here</a>.
+    </div>
+  );
 }
 
 
